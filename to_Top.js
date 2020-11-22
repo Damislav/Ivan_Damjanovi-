@@ -22,14 +22,19 @@
 // });
 
 // dropdown nav
-let button = document.querySelector(".mobile_nav");
-let dropdown = document.querySelector(".mobile_menu");
+// let button = document.querySelector(".mobile_nav");
+// let dropdown = document.querySelector(".mobile_menu");
 
-button.addEventListener("click", () => {
-  dropdown.classList.toggle("display");
-  button.classList.toggle();
+// button.addEventListener("click", () => {
+//   dropdown.classList.toggle("display");
+//   button.classList.toggle();
+// });¸
+
+$(document).ready(function () {
+  $(".mobile_nav").click(function () {
+    $(".mobile_menu").toggle();
+  });
 });
-
 //Get the button to top
 var mybutton = document.getElementById("myBtn");
 
