@@ -1,10 +1,14 @@
 //dropdown menu
 
 $(document).ready(function () {
-  $(".mobile_nav").click(function () {
+  $(".menu-toggle-btn").click(function () {
     $(".mobile_menu").toggle();
   });
 });
+$(".menu-toggle-btn").click(function () {
+  $(this).toggleClass("open");
+});
+// ----------------------------------------------
 //Get the button to top
 var mybutton = document.getElementById("myBtn");
 

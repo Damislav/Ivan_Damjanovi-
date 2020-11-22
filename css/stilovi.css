@@ -92,7 +92,6 @@ a {
 }
 /* end of social links */
 /* header */
-
 header .container {
   display: flex;
   justify-content: space-between;
@@ -107,16 +106,13 @@ header .container .logo {
   position: relative;
   width: 300px;
 }
-
 header .logo a img {
   width: 100%;
   height: auto;
   /* ¸logo
    */
 }
-
-header .container .mobile_nav {
-  margin: 1px 10px 0;
+header .container .menu-toggle-btn {
   display: none;
 }
 header .container .mobile_nav .burger {
@@ -125,59 +121,12 @@ header .container .mobile_nav .burger {
   position: relative;
   overflow: hidden;
 }
-header .container .mobile_nav .burger:active .top,
-header .container .mobile_nav .burger:focus .top,
-header .container .mobile_nav .burger:hover .top {
-  width: 60%;
-}
-header .container .mobile_nav .burger:active .middle,
-header .container .mobile_nav .burger:focus .middle,
-header .container .mobile_nav .burger:hover .middle {
-  width: 70%;
-}
-header .container .mobile_nav .burger:active .bottom,
-header .container .mobile_nav .burger:focus .bottom,
-header .container .mobile_nav .burger:hover .bottom {
-  width: 80%;
-}
-header .container .mobile_nav .burger .mobile_nav__label {
-  margin: -10px 5px;
-  width: 135px;
-  position: absolute;
-}
-header .container .mobile_nav .burger .stripe {
-  height: 4px;
-  background: #000;
-
-  position: absolute;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-}
-
-header .container .mobile_nav .burger .top {
-  right: 0;
-  top: 0;
-  width: 100%;
-}
-header .container .mobile_nav .burger .middle {
-  left: 0;
-  top: 0;
-  margin: 6.9px 0;
-  width: 60%;
-}
-header .container .mobile_nav .burger .bottom {
-  right: 0;
-  top: 0;
-  margin: 14px 0;
-  width: 80%;
-}
 header .container .head_nav {
   width: 90%;
 }
 header .container .head_nav ul {
   text-align: center;
 }
-
 header .container .head_nav ul li {
   display: inline-block;
   margin: 0 15px;
@@ -277,7 +226,7 @@ header {
   border-width: 0 15px 15px 15px;
   transition: 0.4s ease-in-out;
   border-color: transparent transparent #102664 transparent;
-  margin: -10px 35px;
+  margin: -10px 45px;
 }
 .mobile_menu nav {
   padding: 50px;
@@ -287,6 +236,9 @@ header {
   position: relative;
   -webkit-animation: hidecolor 0.8s ease;
   animation: hidecolor 0.8s ease;
+}
+.mobile_menu nav ul .slide a:hover {
+  text-decoration: underline;
 }
 .mobile_menu nav ul .slide a:before {
   content: "";
@@ -309,6 +261,38 @@ header {
 .display {
   display: block;
 }
+.burger {
+  margin-top: 5px;
+}
+.menu-toggle-btn {
+  margin: 15px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.menu-toggle-btn span {
+  background: #1d1d1b;
+  display: block;
+  width: 30px;
+  height: 4px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.3s linear;
+}
+.menu-toggle-btn.open span:nth-child(1),
+.menu-toggle-btn.open span:nth-child(3) {
+  transform: translate(0px, 13px) rotate(-45deg) scalex(1.3);
+  margin: 0;
+}
+.menu-toggle-btn.open span:nth-child(2) {
+  height: 0;
+  margin: 0;
+}
+.menu-toggle-btn.open span:nth-child(3) {
+  transform: translate(0px, 9px) rotate(45deg) scalex(1.3);
+}
+
 @media only screen and (max-width: 1100px) {
   header .container {
     width: 700px;
@@ -329,11 +313,12 @@ header {
   header .head_nav {
     display: none;
   }
-  header .mobile_nav {
-    cursor: pointer;
-    display: block !important;
+  header .container .menu-toggle-btn {
+    display: block;
+    height: 40%;
   }
-  header .mobile_nav .stripe {
+
+  .stripe {
     width: 100% !important;
   }
   .header .container .head_nav {
@@ -368,8 +353,9 @@ header {
     height: 18rem;
   }
   .mobile_menu:before {
-    margin: -10px -5px;
+    margin: -10px 2px;
   }
+
   .mobile_menu nav {
     padding: 30px 50px;
   }
@@ -378,9 +364,6 @@ header {
   }
   .mobile_menu nav ul li a {
     font-size: 1.3rem;
-  }
-
-  .mobile_menu nav ul li {
     margin: 1rem;
   }
 }
