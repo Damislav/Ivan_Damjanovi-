@@ -1,34 +1,4 @@
-// $(".mobile_nav").click(function () {
-//   var mm = $(".mobile_menu"),
-//     mn = $(".mobile_nav"),
-//     a = "active";
-
-//   if (mm.hasClass(a) && mn.hasClass(a)) {
-//     mm.removeClass(a).fadeOut(200);
-//     mn.removeClass(a);
-//     $(".mobile_menu li").each(function () {
-//       $(this).removeClass("slide");
-//     });
-//   } else {
-//     mm.addClass(a).fadeIn(200);
-//     mn.addClass(a);
-//     $(".mobile_menu li").each(function (i) {
-//       var t = $(this);
-//       setTimeout(function () {
-//         t.addClass("slide");
-//       }, (i + 1) * 100);
-//     });
-//   }
-// });
-
-// dropdown nav
-// let button = document.querySelector(".mobile_nav");
-// let dropdown = document.querySelector(".mobile_menu");
-
-// button.addEventListener("click", () => {
-//   dropdown.classList.toggle("display");
-//   button.classList.toggle();
-// });¸
+//dropdown menu
 
 $(document).ready(function () {
   $(".mobile_nav").click(function () {

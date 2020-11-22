@@ -2235,27 +2235,7 @@ h3 {
     margin: 1rem;
     padding: 1rem;
   }
-  .card-img {
-    background: url("../img/servis/popravak.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50%;
-  }
-  .card-img-2 {
-    background: url("../img/servis/racunalne-komponente.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50%;
-  }
-  .card-img-3 {
-    background: url("../img/servis/servis-background.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50%;
-  }
+
   .servis .featured-products {
     height: 100%;
   }
