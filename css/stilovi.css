@@ -14,13 +14,6 @@ body {
   background-color: rgba(243, 243, 243, 0.698);
   font-family: "Open Sans", sans-serif;
 }
-* {
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
-}
-::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
-}
 
 /* utilites */
 button,
@@ -227,6 +220,13 @@ header {
   }
 }
 @media only screen and (max-width: 800px) {
+  * {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+  ::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
   header {
     padding: 0 50px;
     height: 80px;
