@@ -330,9 +330,12 @@ header {
   }
   .mobile-ul {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     align-items: start;
+    overflow: scroll;
+    height: 100vh;
+    width: 100%;
   }
 }
 
@@ -365,20 +368,26 @@ header {
     padding: 30px 50px;
   }
   .mobile_menu nav ul li {
-    margin: 20px 0px;
+    margin: 2rem 1rem;
   }
   .mobile_menu nav ul li a {
     font-size: 1.3rem;
-    margin: 1rem;
   }
 }
 
+@media only screen and (max-width: 380px) {
+  .mobile_menu nav ul li {
+    margin: 1rem 0.5rem;
+    width: 100%;
+  }
+}
 /* horizontal view */
 
 @media screen and (max-height: 340px) {
   .mobile_menu nav ul {
     margin-bottom: 2rem;
     font-size: 0.6rem;
+    
   }
   .mobile_menu nav {
     padding: 0;
