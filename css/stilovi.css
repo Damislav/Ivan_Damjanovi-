@@ -387,7 +387,6 @@ header {
   .mobile_menu nav ul {
     margin-bottom: 2rem;
     font-size: 0.6rem;
-    
   }
   .mobile_menu nav {
     padding: 0;
@@ -2041,7 +2040,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 4rem;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
