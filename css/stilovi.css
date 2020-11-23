@@ -14,6 +14,13 @@ body {
   background-color: rgba(243, 243, 243, 0.698);
   font-family: "Open Sans", sans-serif;
 }
+* {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
 
 /* utilites */
 button,
@@ -398,8 +405,7 @@ header {
   }
 }
 /* horizontal view */
-@media screen and (max-height: 550px) {
-}
+
 @media screen and (max-height: 360px) {
   .mobile_menu nav ul {
     margin-bottom: 2rem;
