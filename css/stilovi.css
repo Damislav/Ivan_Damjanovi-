@@ -106,6 +106,10 @@ header .container .logo {
   position: relative;
   width: 300px;
 }
+header .logo a {
+  width: 100%;
+  display: inline-block;
+}
 header .logo a img {
   width: 100%;
   height: auto;
