@@ -356,7 +356,6 @@ header {
   .mobile_menu {
     position: absolute;
     z-index: 15;
-    height: 55vh;
   }
   .mobile_menu:before {
     margin: -10px 2px;
@@ -798,7 +797,7 @@ header {
   width: 100%;
   position: relative;
   margin: auto;
-  height: 600px;
+
   overflow: hidden;
   object-fit: contain;
 }
