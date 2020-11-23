@@ -386,6 +386,9 @@ header {
   .mobile_menu nav ul li a {
     font-size: 1.2rem;
   }
+  .mobile_ul {
+    overflow: scroll;
+  }
 }
 /* horizontal view */
 
@@ -398,6 +401,9 @@ header {
     padding: 0;
 
     padding-left: 25%;
+  }
+  .mobile_ul {
+    overflow: scroll;
   }
 }
 @-webkit-keyframes slide {
@@ -1920,14 +1926,11 @@ h3 {
 }
 
 .price {
- 
-  
   font-size: 1.5rem;
 }
 .servis-btn {
   margin: 0 auto;
 }
- 
 
 .card button {
   border: none;
